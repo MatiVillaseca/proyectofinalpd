@@ -1,0 +1,286 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Sketch&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Sketch&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ESTILOS COMUNES */
+
+* {
+    box-sizing: border-box; /*sirve para que el tamaño de los div se mantenga, no suman los padding o margin*/
+}
+
+body {
+    height: 100vh;
+    background-color: #669D31;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+img {
+    border-radius: 12px;
+}
+
+/* COLORES
+ color navbar: #11270B
+ color aside: #71B340
+ color fondo: #669D31
+ color sec: #598B2C
+ color sec: #3C5A14*/
+
+/* ESTILO HEADER */
+
+header {
+    padding: 70px;
+    text-align: center;
+    background-image: url(../img/foto-principal1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+    }
+}
+
+/* ESTILOS NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #11270B;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar a {
+    color: aquamarine;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #669D31;
+    color: #3C5A14;
+    border-radius: 3px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a{
+        text-align: center;
+    }
+}
+
+/* ESTILOS PARTE PRINCIPAL */
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex-basis: 25%;
+    background-color:#71B340;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+aside p {
+    font-family: "Jaro", sans-serif;
+    color: antiquewhite;
+}
+
+.asidetitle {
+    font-family: "Anton SC", sans-serif;
+}
+
+main {
+    flex-basis: 75%;
+    background-color: #598B2C;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+/* Estilos aside */
+
+.image img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.10);
+}
+
+.asidetitle {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .image img {
+        width: 60%;
+    }
+}
+
+/* Estilo main */
+
+main h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color:floralwhite;
+    text-align: center;
+}
+
+main p {
+    font-style: italic;
+}
+
+main img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+main .vermas {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    border: 1px outset #11270B;
+}
+
+/* ESTILO IFRAME */
+main iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+@media (max-width: 800px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+/* Estilos footer */
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #11270B;
+    color: aquamarine;
+}
+
+/* Estilos formulario */
+
+form {
+    padding: 40px;
+    background-color:#71B340 ;
+    border: 5px solid #3C5A14;
+    text-align: center;
+    height: 100%;
+}
+
+label {
+    background-color: #11270B;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 30vw 25vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border:3px solid #3C5A14;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+
+.boton {
+    background-color: #669D31;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ESTILOS COCINA Y BAÑO*/
+
+.carousel-inner {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.d-block {
+    height: 600px;
+    object-fit: fill;
+}
+
+.card-img-top {
+height: 450px;
+object-fit: cover;   
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #71B340;
+}
+
+
+.card-body {
+    background-color: #669D31;
+    color: #11270B;
+    text-align: center;
+}
+
+.card-title {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
